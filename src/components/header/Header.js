@@ -15,6 +15,14 @@ const LINKS = [
     path: '/brend'
   },
   {
+    name: 'Products',
+    path: '/products'
+  },
+  {
+    name: 'News',
+    path: '/news'
+  },
+  {
     name: 'About us',
     path: '/about'
   },
@@ -22,10 +30,7 @@ const LINKS = [
     name: 'Contact us',
     path: '/contact'
   },
-  {
-    name: 'Products',
-    path: '/products'
-  },
+
   {
     name: 'Login',
     path: '/login'
@@ -36,19 +41,21 @@ const Header = () => {
   const pathname = usePathname()
 
   const activeClass = path => {
-    return pathname === path ? 'text-red-500 font-bold ' : ''
+    return pathname === path ? 'text-red-600 font-bold ' : ''
   }
 
   return (
-    <header className='w-full h-auto p-5 bg-slate-950 '>
+    <header className='w-full h-auto p-5 bg-slate-950'>
       <div className='container mx-auto flex justify-between items-center'>
         <Link href={'/'}>
           <Image className='w-40 max-md:w-32' src={logo} alt='logo' />
         </Link>
-        <nav className='flex gap-16 max-lg:gap-5 max-md:hidden'>
+        <nav className='flex gap-16 max-xl:gap-7  max-md:hidden'>
           {LINKS?.map(({ name, path }, inx) => (
             <Link
-              className={`${activeClass(path)} text-white text-xl `}
+              className={`${activeClass(
+                path
+              )} text-white text-xl text-nowrap max-lg:text-lg`}
               key={inx}
               href={path}
             >

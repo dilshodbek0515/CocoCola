@@ -22,15 +22,15 @@ const Footer = () => {
           </Link>
           <Link
             className='text-2xl text-white duration-300 hover:text-red-700'
-            href={'/about'}
+            href={'/brend'}
           >
-            About us
+            Brend
           </Link>
           <Link
             className='text-2xl text-white duration-300 hover:text-red-700'
-            href={'/service'}
+            href={'/products'}
           >
-            Service
+            Products
           </Link>
         </div>
         <div className='flex items-center gap-10 max-md:gap-5 max-[400px]:gap-2'>

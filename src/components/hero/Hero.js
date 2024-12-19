@@ -22,11 +22,11 @@ const Hero = () => {
             delay: 2000,
             disableOnInteraction: false
           }}
-          pagination={{
-            clickable: true
-          }}
+          // pagination={{
+          //   clickable: true
+          // }}
           navigation={false}
-          modules={[Autoplay, Pagination, Navigation]}
+          modules={[Autoplay, Navigation]}
           className='w-full h-[700px] rounded-xl max-2xl:h-auto'
         >
           <SwiperSlide className='w-full h-auto'>

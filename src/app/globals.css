@@ -10,3 +10,8 @@ body::-webkit-scrollbar-thumb {
   border-radius: 10px;
   background: red;
 }
+
+.news::-webkit-scrollbar {
+  height: 0px;
+}
+

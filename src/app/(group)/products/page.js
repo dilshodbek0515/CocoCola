@@ -1,12 +1,14 @@
 import Products from '@/components/products/Products'
 import React from 'react'
 
-const ProductsRoute = () => {
+const ProductRoute = async () => {
+  const data = await fetch('https://dummyjson.com/products')
+  const posts = await data.json()
   return (
     <div>
-      <Products />
+      <Products posts={posts} />
     </div>
   )
 }
 
-export default ProductsRoute
+export default ProductRoute
