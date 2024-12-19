@@ -8,6 +8,7 @@ import brend5 from '@/assets/images/brend3.webp'
 import brend6 from '@/assets/images/brend4.webp'
 import brend7 from '@/assets/images/brend5.webp'
 import brend8 from '@/assets/images/brend6.webp'
+import Link from 'next/link'
 const Brend = () => {
   return (
     <section className='w-full h-auto bg-red-100 px-5 pt-20 pb-10'>
@@ -78,9 +79,12 @@ const Brend = () => {
             />
           </div>
         </div>
-        <button className='w-[40%] h-20 border-2 font-semibold border-red-500 bg-red-500 duration-300 text-white rounded-full text-2xl hover:text-red-500 hover:bg-transparent max-sm:w-full'>
+        <Link
+          href={'/brend'}
+          className='w-[40%] h-20 flex items-center justify-center border-2 font-semibold border-red-500 bg-red-500 duration-300 text-white rounded-full text-2xl hover:text-red-500 hover:bg-transparent max-sm:w-full'
+        >
           View all
-        </button>
+        </Link>
       </div>
     </section>
   )

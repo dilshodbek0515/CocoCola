@@ -5,7 +5,7 @@ import { memo } from 'react'
 
 function Home () {
   return (
-    <div className=''>
+    <div>
       <Hero />
       <About />
       <Brend />

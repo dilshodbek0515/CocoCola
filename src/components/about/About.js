@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import React from 'react'
 import about from '@/assets/images/about.webp'
+import Link from 'next/link'
 const About = () => {
   return (
     <section className='w-full h-auto p-5 bg-red-100 pt-32 pb-32'>
@@ -25,9 +26,9 @@ const About = () => {
             young scientists had the opportunity to engage in online discussions
             with Nobel laureates and renowned scholars.
           </p>
-          <button className='w-[50%] h-20 rounded-full border-2 bg-red-500 text-2xl text-white duration-300 hover:bg-transparent hover:border-red-500 hover:text-red-500 max-xl:text-xl max-xl:w-full max-lg:w-[70%]'>
+          <Link href={"/about"} className='w-[50%] h-20 flex items-center justify-center rounded-full border-2 bg-red-500 text-2xl text-white duration-300 hover:bg-transparent hover:border-red-500 hover:text-red-500 max-xl:text-xl max-xl:w-full max-lg:w-[70%]'>
             More details
-          </button>
+          </Link>
         </div>
       </div>
     </section>
