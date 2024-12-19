@@ -2,7 +2,7 @@ import React from 'react'
 
 const Login = () => {
   return (
-    <section className='w-full h-screen flex items-center justify-center p-5 bg-hero bg-no-repeat bg-cover'>
+    <section className='w-full h-screen flex items-center justify-center p-5'>
       <form className='w-[600px] mx-auto flex flex-col items-center justify-center gap-10 p-5 bg-red-400 shadow-2xl rounded-xl'>
         <h3 className='text-5xl text-white'>Coco Cola</h3>
         <input

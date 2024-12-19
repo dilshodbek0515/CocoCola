@@ -10,9 +10,6 @@ export default {
       colors: {
         background: 'var(--background)',
         foreground: 'var(--foreground)'
-      },
-      backgroundImage: {
-        hero: 'url(./@/assets/images/bg-cola.jpg)'
       }
     }
   },
