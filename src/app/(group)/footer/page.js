@@ -1,9 +1,9 @@
 import React from 'react'
-
+import Footer from '@/components/footer/Footer'
 const Footer = () => {
   return (
     <div>
-        <Footer/>
+      <Footer />
     </div>
   )
 }

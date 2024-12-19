@@ -1,10 +1,9 @@
 import React from 'react'
 import { FaRegStar } from 'react-icons/fa'
+
 const Detail = async ({ params }) => {
   const data = await fetch(`https://dummyjson.com/products/${params.id}`)
   const posts = await data.json()
-  console.log(posts)
-
   return (
     <section className='w-full h-auto p-5 bg-red-100'>
       <div className='container mx-auto flex justify-between p-20 items-center bg-red-200 rounded-2xl gap-5 max-lg:flex-col max-lg:gap-20 max-md:p-10'>
