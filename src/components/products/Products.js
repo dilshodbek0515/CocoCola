@@ -6,7 +6,7 @@ const Products = ({ posts }) => {
   const router = useRouter()
   return (
     <section className='w-full h-auto p-5 bg-red-100'>
-      <div className='container mx-auto grid grid-cols-4 gap-5'>
+      <div className='container mx-auto grid grid-cols-4 gap-5 max-xl:grid-cols-3 max-lg:grid-cols-2 max-md:grid-cols-1'>
         {posts?.products?.map(pro => (
           <div
             key={pro.id}
@@ -14,7 +14,7 @@ const Products = ({ posts }) => {
           >
             <img
               onClick={() => router.push(`/detail/${pro.id}`)}
-              className='w-full object-cover min-h-[70%]'
+              className='w-full object-cover min-h-[70%] max-md:object-contain max-md:h-[50%]'
               src={pro.thumbnail}
               alt='image'
             />
