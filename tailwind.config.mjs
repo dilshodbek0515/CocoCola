@@ -12,7 +12,7 @@ export default {
         foreground: 'var(--foreground)'
       },
       backgroundImage: {
-        hero: 'url(@/assets/images/bg-cola.jpg)'
+        hero: 'url(./@/assets/images/bg-cola.jpg)'
       }
     }
   },
