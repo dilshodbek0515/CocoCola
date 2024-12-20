@@ -9,17 +9,17 @@ const Detail = async ({ params }) => {
       <div className='container mx-auto flex justify-between p-20 items-center bg-red-200 rounded-2xl gap-5 max-lg:flex-col max-lg:gap-20 max-md:p-10'>
         <div className='flex flex-col gap-5 w-[40$] max-lg:flex-row max-md:flex-wrap max-[555px]:flex-col max-[555px]:items-center max-[555px]:justify-center '>
           <img
-            className='w-72 h-72 border-2 border-red-500 p-2 rounded-2xl max-xl:h-52 max-lg:max-w-52'
+            className='w-72 h-72 border-2 border-red-500 cursor-pointer p-2 rounded-2xl max-xl:h-52 max-lg:max-w-52'
             src={posts?.images[0]}
             alt='img'
           />
           <img
-            className='w-72 h-72 border-2 border-red-500 p-2 rounded-2xl max-xl:h-52 max-lg:max-w-52'
+            className='w-72 h-72 border-2 border-red-500 cursor-pointer p-2 rounded-2xl max-xl:h-52 max-lg:max-w-52'
             src={posts?.images[1]}
             alt='img'
           />
           <img
-            className='w-72 h-72 border-2 border-red-500 p-2 rounded-2xl max-xl:h-52 max-lg:max-w-52'
+            className='w-72 h-72 border-2 border-red-500 cursor-pointer p-2 rounded-2xl max-xl:h-52 max-lg:max-w-52'
             src={posts?.images[2]}
             alt='img'
           />
