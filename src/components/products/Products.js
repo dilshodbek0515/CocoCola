@@ -13,7 +13,7 @@ const Products = ({ posts }) => {
             className='h-[500px] bg-[#fff] shadow-2xl rounded-2xl p-5 gap-2 flex flex-col justify-between'
           >
             <img
-              onClick={() => router.push(`/detail/${pro.id}`)}
+              onClick={() => router.push(`/product/${pro.id}`)}
               className='w-full object-cover cursor-pointer min-h-[70%] max-md:object-contain max-md:h-[50%]'
               src={pro.thumbnail}
               alt='image'
